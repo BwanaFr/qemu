@@ -171,4 +171,9 @@ config SIFIVE_U_PRCI
 config VIRT_CTRL
     bool
 
+config ISA_NANORESEAU
+    bool
+    default y
+    depends on ISA_BUS
+
 source macio/Kconfig
